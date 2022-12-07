@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { fetchCoffeeStores } from '../../lib/coffee-stores'
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const coffeeStores = await fetchCoffeeStores()
   const coffeeStore = coffeeStores.find(
     (coffeeStore) => coffeeStore.fsq_id.toString() === context.params.id
@@ -16,13 +16,13 @@ export async function getStaticProps(context) {
   }
 }
 
-export async function getStaticPaths() {
+export async function getServerSidePaths() {
   const coffeeStores = await fetchCoffeeStores()
   return {
     paths: coffeeStores.map((coffeeStore) => ({
       params: { id: coffeeStore.fsq_id.toString() },
     })),
-    fallback: false,
+    fallback: true,
   }
 }
 
