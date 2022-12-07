@@ -58,22 +58,22 @@ export default function Home() {
         <title>Fresh Pots</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
       </Head>
-      <div className="flex-1">
+      <div className="flex-1 bg-[#271c19]">
         <Hero
           buttonText={
             isFindingLocation
-              ? 'Locating shops near you'
-              : 'Search nearby stores'
+              ? 'Locating pots near you'
+              : 'Find me some fresh pots!'
           }
           function={HandleLocationClick}
         />
         <section className="px-4 mx-auto space-y-8 max-w-7xl">
           {coffeeStores.length > 0 && (
-            <h2 className="text-3xl font-semibold font-display">
+            <h2 className="font-display text-3xl font-semibold text-[#fffffe]">
               Stores near me
             </h2>
           )}
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {coffeeStores.length > 0 &&
               coffeeStores.map((coffeeStore) => (
                 <CoffeeCard

@@ -16,8 +16,8 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className="flex-initial bg-white">
-      <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+    <footer className="flex-initial bg-[#271c19]">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
             <a
@@ -26,12 +26,12 @@ export default function Footer() {
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="w-6 h-6" aria-hidden="true" />
+              <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-base text-center text-gray-400">
+          <p className="text-center text-base text-gray-400">
             Put together in 2022 by Peter Lloyd. Buy me a coffee or say{' '}
             <a
               href="https://peterlloyd.digital/"

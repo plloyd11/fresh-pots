@@ -3,7 +3,14 @@ import Link from 'next/link'
 
 export default function CoffeeCard(props) {
   return (
-    <Link href={props.url}>
+    <Link
+      href={props.url}
+      className="relative z-50"
+      data-blobity-offset-x="12"
+      data-blobity-offset-y="12"
+      data-blobity-radius="8"
+      data-blobity-color="#271c19"
+    >
       <div className="overflow-hidden bg-gray-100 divide-y divide-gray-200 rounded-lg shadow-lg">
         <Image
           src={props.img}
