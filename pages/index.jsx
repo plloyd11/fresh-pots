@@ -58,7 +58,7 @@ export default function Home() {
         <title>Fresh Pots</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
       </Head>
-      <div className="flex-1 bg-[#271c19]">
+      <div className="flex-1 bg-[#252523]">
         <Hero
           buttonText={
             isFindingLocation
@@ -67,7 +67,7 @@ export default function Home() {
           }
           function={HandleLocationClick}
         />
-        <section className="px-4 mx-auto space-y-8 max-w-7xl">
+        <section className="mx-auto max-w-7xl space-y-8 px-4">
           {coffeeStores.length > 0 && (
             <h2 className="font-display text-3xl font-semibold text-[#fffffe]">
               Stores near me

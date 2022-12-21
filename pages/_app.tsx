@@ -21,7 +21,7 @@ const Ass = () => {
     const blobity = useBlobity({
         licenseKey: 'plloyd11',
         color: '#ffffff',
-        dotColor: '#271c19',
+        dotColor: '#252523',
         zIndex: 1,
         fontSize: 18,
     });
@@ -31,7 +31,7 @@ const Ass = () => {
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <StoreProvider>
-        <main className={`flex flex-col h-screen bg-[#271c19] ${signika.variable} font-sans, ${quicksand.variable} font-sans`}>
+        <main className={`flex flex-col h-screen bg-[#252523] ${signika.variable} font-sans, ${quicksand.variable} font-sans`}>
             <Header />
             <Ass />
             <Component {...pageProps} />

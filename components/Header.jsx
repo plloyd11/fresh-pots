@@ -10,7 +10,7 @@ export default function Header() {
             <Link href="/" className="block cursor-pointer">
               <span className="sr-only">Fresh Pots</span>
               <Image
-                src="/images/logo.svg"
+                src="/images/logo.png"
                 alt="Fresh Pots"
                 width={96}
                 height={96}

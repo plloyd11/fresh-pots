@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Hero(props) {
   return (
-    <div className="isolate bg-[#271c19]">
+    <div className="isolate bg-[#252523]">
       <section>
         <div className="relative px-6 lg:px-8">
           <div className="pt-8 pb-12 mx-auto max-w-7xl sm:pt-16 sm:pb-24 lg:pt-48 lg:pb-40">
@@ -18,7 +18,7 @@ export default function Hero(props) {
                 <div className="flex mt-8 gap-x-4">
                   <button
                     onClick={props.function}
-                    className="relative z-10 flex items-center gap-2 rounded-lg bg-[#ffc0ad] px-8 py-3 text-xl font-semibold leading-7 text-[#271c19] shadow-sm ring-1 ring-[#140d0b] hover:bg-[#eebbc3] hover:ring-[#eebbc3]"
+                    className="relative z-10 flex items-center gap-2 rounded-lg bg-[#ffa95d] px-8 py-3 text-xl font-semibold leading-7 text-[#252523] shadow-sm ring-1 ring-[#140d0b] hover:bg-[#eebbc3] hover:ring-[#eebbc3]"
                     data-blobity-tooltip="Click here to search for up to 30 local coffee shops!"
                   >
                     {props.buttonText}
@@ -27,7 +27,7 @@ export default function Hero(props) {
               </div>
               <div>
                 <Image
-                  src="/images/hero.jpg"
+                  src="/images/hero.png"
                   alt="Dave Grohl yelling"
                   width="800"
                   height="600"

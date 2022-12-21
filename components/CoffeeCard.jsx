@@ -9,18 +9,18 @@ export default function CoffeeCard(props) {
       data-blobity-offset-x="12"
       data-blobity-offset-y="12"
       data-blobity-radius="8"
-      data-blobity-color="#271c19"
+      data-blobity-color="#252523"
     >
-      <div className="overflow-hidden bg-gray-100 divide-y divide-gray-200 rounded-lg shadow-lg">
+      <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-100 shadow-lg">
         <Image
           src={props.img}
           alt={props.name}
           width={800}
           height={300}
-          className="object-cover object-center h-48"
+          className="h-48 object-cover object-center"
         />
-        <div className="px-4 py-6 space-y-2 sm:px-6">
-          <h2 className="text-2xl font-semibold font-display">{props.name}</h2>
+        <div className="space-y-2 px-4 py-6 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold">{props.name}</h2>
           <p className="text-lg text-gray-700">{props.description}</p>
         </div>
       </div>
